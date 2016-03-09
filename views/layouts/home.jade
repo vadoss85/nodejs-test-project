@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .wrapper
+      block header
+        header.header
+          h1 Header
+      section.page-wrapper
+        block sidebar
+          section.sidebar
+            h2 Sidebar
+        section.page
+          block content
+      block footer
+        footer
+          h3 Footer
