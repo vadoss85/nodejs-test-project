@@ -3,3 +3,13 @@ extends ../layouts/home.jade
 block content
   h1= title
   p Welcome to #{title}
+  div.list
+    each user in users
+      div.name= user.name
+      div.age= user.age
+      div.position= user.position
+  div.add-new
+    input(type="text", name="name")
+    input(type="text", name="age")
+    input(type="text", name="position")
+    input(type="submit", value="Submit")
